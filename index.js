@@ -28,4 +28,7 @@ function day(){
     // console.log(`day and date is ${weekday} ${hour}:${minute}:${ampm}`);
 
 }
-day();
+//ham function ko hr 1 sec pe call kr rhe hai taki wo refresh hota rhe
+setInterval( ()=>{
+    day();  
+}, 1000);
